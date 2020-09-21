@@ -16,6 +16,7 @@
   --headline-color-on-color: var(--accent2-color); /* headlines on a colored background */
   --paragraph-color-on-white: var(--accent1-color); /* paragraph text on a white background */
   --paragraph-color-on-color: var(--accent2-color); /* paragraph text on a colored background */
+  --headline-background-color: var(--primary-color);
   --text-background-color: var(--secondary-color);
   --nav-link-color: var(--accent1-color);
   --nav-background-color: var(--primary-color);
@@ -36,7 +37,8 @@ div#gridStructure {
     grid-template-rows: auto auto auto auto;
     grid-gap: 30px;
     z-index: -1;
-    background-color:var(--accent2-color);
+    color:var(--paragraph-color-on-color);
+    background-color:var(--text-background-color);
     font-family: var(--paragraph-font);
 }       
 
@@ -47,7 +49,7 @@ div#gridStructure {
             grid-row-end: 2;
             font-size: 60px;
             text-align: left;            
-            background-color:var(--text-background-color);
+            background-color:var(--headline-background-color);
             color:var(--headline-color-on-white);
             font-family: var(--heading-font);
         }
@@ -58,7 +60,6 @@ div#gridStructure {
             grid-row-end: 3;
             font-size: 40px;
             text-align: left;
-            color:var(--headline-color-on-white);
             font-family: var(--heading-font);
         }
         ul#portalLinks{
@@ -68,15 +69,20 @@ div#gridStructure {
             grid-row-end: 4;
             font-size: 30px;
             text-align: left;
-            color:var(--headline-color-on-white);
         }
+            a.portLink{
+                color:var(--paragraph-color-on-color);
+            }
         footer{  
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 4;
             grid-row-end: 5;
-            background-color:var(--text-background-color);
+            background-color:var(--headline-background-color);
             color:var(--headline-color-on-white);
-            font-size: 15px;
+            font-size: 20px;
             text-align: center;
         }
+            a#byui-link{
+                color:var(--headline-color-on-white);
+            }        
