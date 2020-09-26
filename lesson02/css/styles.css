@@ -2,9 +2,9 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #004d00;
+  --primary-color: hsl(0, 0%, 100%);
   --secondary-color: #000000;
-  --accent1-color:#b30000;
+  --accent1-color:#000000;
   --accent2-color: #DDD346;
 
   /* change the values below to your chosen font(s) */
@@ -25,14 +25,20 @@
 }
 
 img.Pic {
-    height: 250px;
+    height: 500px;
     width: 250px;
     border: var(--secondary-color);
     z-index: 1;
 }
+ul.bullets{
+    width: ;
+}
+p.paragraphs{
+    font-family: var(--heading-font);
+}
 div#gridStructure {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% auto;
     grid-template-rows: auto auto auto auto auto;
     grid-gap: 30px;
     color:var(--paragraph-color-on-color);
