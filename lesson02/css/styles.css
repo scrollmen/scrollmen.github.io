@@ -30,9 +30,6 @@ img.Pic {
     border: var(--secondary-color);
     z-index: 1;
 }
-ul.bullets{
-    width: ;
-}
 p.paragraphs{
     font-family: var(--heading-font);
 }
