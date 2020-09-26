@@ -31,12 +31,6 @@ img#myPhoto{
     width: 40%;
     z-index: 1;
 }
-body ul li img.Screenshot {
-    position: relative;
-    height: 250px;
-    width: 250px;
-    z-index: 1;
-}
 div#gridStructure {
     display: grid;
     grid-template-columns: auto;
